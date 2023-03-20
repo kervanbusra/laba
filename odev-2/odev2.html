@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İş Başvuru Formu</title>
+  </head>
+  <body>
+    <header>
+      <h1>İŞ BAŞVURU FORMU</h1>
+    </header>
+    <form action="https://www.google.com.tr/">
+      <fieldset>
+        <legend>Genel Bilgiler</legend>
+        <label for="name">Adınız</label> <br />
+        <input type="text" id="name" name="Adınız" /><br />
+        <label for="surname">Soyadınız</label><br />
+        <input type="text" id="surname" name="Soyadınız" /><br /><br>
+        <legend> Cinsiyetiniz</legend>
+        <input type="radio" id="Erkek" name="Gender" value="Erkek">
+        <label for="Erkek">Erkek</label>
+        <input type="radio" id="Kadın" name="Gender" value="Kadın">
+        <label for="Kadın">Kadın</label>
+        <input type="radio" id="Diğer" name="Gender" value="Diğer">
+        <label for="Diğer">Diğer </label><br><br>
+        <label for="birthdate">Doğum Tarihiniz</label><br>
+        <input type="date" name="birthdate" id="birthdate" value="Doğum Tarihiniz"><br><br>
+        <label for="place">Doğum Yeriniz</label> <br />
+        <input type="text" id="place" name="Doğum Yeriniz" maxlength="15"><br/>
+      </fieldset>
+
+      <fieldset>
+        <legend>İletişim Bilgileri</legend>
+        <label for="homephone">Ev Telefonu</label><br>
+        <input type="tel" id="homephone" name="Ev telefonu" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"> <br>
+        <label for="mobilephone"> Cep Telefonu</label><br>
+        <input type="tel" id="mobilephone" name="Cep telefonu" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
+        <label for="workphone"> İş Telefonu</label><br>
+        <input type="tel" id="workphone" name="İş telefonu" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
+        <label for="address">Adresiniz</label><br>
+        <textarea name="adress" id="address" cols="35" rows="10" placeholder="Lütfen bu kısıma yazınız.."></textarea><br>
+        <label for="e-mail">E-mail</label><br>
+        <input type="email" name="e-mail" id="e-mail">
+      </fieldset>
+      
+      <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <label for="job position">İş Pozisyonu</label><br>
+        <input type="text" name="İş Pozisyonu"><br><br>
+        <label for="driving licence">Ehliyet</label><br>
+        <select name="Ehliyet" id="driving licence">
+            <option value="choose" selected disabled hidden> Seçim Yapınız </option>
+            <option value="Var">Var</option>
+            <option value="Yok">Yok</option>
+        </select> <br><br>
+        <legend>Eğitim Durumunuz</legend>
+        <label for="Education-1">İlkokul</label>
+        <input type="checkbox" id="Education-1" name="İlkokul" value="İlkokul">
+        <label for="Education-2"> Lise</label>
+        <input type="checkbox" id="Education-2" name="lise" value="Lise">
+        <label for="Education-3"> Lisans</label>
+        <input type="checkbox" id="Education-3" name="lisans" value="Lisans"><br><br> 
+        <label for="your website">İnternet Siteniz</label><br>
+        <input type="url" id="your website" name="your website"><br><br>
+        <label for="yourfile">Dosya Yükleyiniz</label><br>
+        <input type="file" id="yourfile" name="yourfile"><br><br>
+        <input type="submit" name="Gönder" id="submit" value="Gönder">
+        <input type="reset" name="Sıfırla" id="reset" value="Sıfırla">
+      </fieldset>
+
+    </form>
+  </body>
+</html>

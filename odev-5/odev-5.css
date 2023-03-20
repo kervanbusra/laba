@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__item-1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.container__item-2 {
+  display: flex;
+  align-items: end;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+}
+.cizmeli-class,
+.casper-class,
+.peter-class,
+.tom-class,
+.sirinler-class {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+}
+
+.zoom-img-1,
+.zoom-img-2,
+.zoom-img-3,
+.zoom-img-4,
+.zoom-img-5 {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.zoom-img-1 img,
+.zoom-img-2 img,
+.zoom-img-3 img,
+.zoom-img-4 img,
+.zoom-img-5 img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.4s ease;
+  transform: scale(1);
+}
+
+.zoom-img-1 img:hover {
+  transform: scale(1.5);
+}
+.zoom-img-2 img:hover {
+  transform: scale(1.5);
+}
+.zoom-img-3 img:hover {
+  transform: scale(1.5);
+}
+.zoom-img-4 img:hover {
+  transform: scale(1.5);
+}
+.zoom-img-5 img:hover {
+  transform: scale(1.5);
+}
+
+.cizmeli-class:target {
+  background: url(./cizmelikedi.webp) no-repeat center;
+  background-size: 600px 500px;
+}
+
+.casper-class:target {
+  background: url(./casper.webp) no-repeat center;
+  background-size: 600px 500px;
+}
+.peter-class:target {
+  background: url(./peterpan.jpeg) no-repeat center;
+  background-size: 600px 500px;
+}
+
+.tom-class:target {
+  background: url(./tomandjerry.png) no-repeat center;
+  background-size: 600px 500px;
+}
+.sirinler-class:target {
+  background: url(./şirinler.jpg) no-repeat center;
+  background-size: 600px 500px;
+}
+
+.cizmeli-class:target  {
+    animation: cizmeli-class 0.8s ease-in  alternate-reverse;
+}
+@keyframes cizmeli-class {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.casper-class:target {
+    animation: casper-class 0.9s ease-out  alternate;
+}
+
+@keyframes casper-class {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform:scale(1);
+        }
+
+    100% {
+        transform: skewy(20deg);
+    }
+}
+
+.peter-class:target {
+    animation: peter-class 0.8s ease-in-out  alternate;
+}
+
+@keyframes peter-class {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform:scale(1);
+        }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+.tom-class:target {
+    animation: tom-class 0.7s ease-in  reverse;
+}
+
+@keyframes tom-class {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform:scale(1);
+        }
+
+    100% {
+        transform: skewx(20deg);
+    }
+}
+
+.sirinler-class:target {
+    animation: sirinler-class 0.8s ease-out  alternate-reverse;
+}
+
+@keyframes sirinler-class {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform:scale(1);
+        }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
